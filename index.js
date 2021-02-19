@@ -1,9 +1,14 @@
 // setting up entries from user for their README file
 // helpful website with inquirer code examples https://www.codota.com/code/javascript/modules/inquirer
 
+// TODO: Include packages needed for this application
+
+
+
 var inquirer = require('inquirer');
 var fs = require('fs');
 
+// TODO: Create an array of questions for user input
 inquirer.prompt([
         {
             type: "input",
