@@ -1,0 +1,19 @@
+{
+  "name": "professional_readme_generator",
+  "version": "1.0.0",
+  "description": "A command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package] (https://www/npmjs.com/package/inquirer).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmgleason/Professional_README_Generator.git"
+  },
+  "author": "Wanda Gleason <oglissane@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wmgleason/Professional_README_Generator/issues"
+  },
+  "homepage": "https://github.com/wmgleason/Professional_README_Generator#readme"
+}
