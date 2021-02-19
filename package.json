@@ -12,6 +12,9 @@
   },
   "author": "Wanda Gleason <oglissane@gmail.com>",
   "license": "ISC",
+  "dependencies": {
+  "inquirer": "^7.3.3"
+  },
   "bugs": {
     "url": "https://github.com/wmgleason/Professional_README_Generator/issues"
   },
