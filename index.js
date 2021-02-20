@@ -9,8 +9,7 @@ const util = require('./Utils/generateMarkdown');
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
-const questions = () => {
-    return inquirer.prompt([
+const questions = [
         {
             type: "input",
             message: "Enter the title of your project, please:",
@@ -71,31 +70,35 @@ const questions = () => {
                 "Eclipse Public License 1.0",
                 "Apache License, Version 2.0"
             ]
-        },
-    ]);
-};
-
-
-
-
-
-// TODO: Create a function to initialize app
-function init() {
-
-}
-
-// Function call to initialize app
-init();
+        }
+    ];
 
 //adding feedback from the console re success or failure of creating new readme file
 // const fs = require("fs") similar to in class activity 28
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
 fs.writeFile ("READMEgenerated.md", "README ", function(err) {
-if (err) {console.log("Uh-oh, there has been an error.")}
-else {console.log("Success! Your README file has been generated.")}
-})
+    if (err) {console.log("Uh-oh, there has been an error.")}
+    else {console.log("Success! Your README file has been generated.")}
+    });
+}
+    
+// function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, generateMarkdown(data), err =>
+        err ? console.log(err) : console.log('Success!'))
+}
 
+// function to initialize program
+function init() {
+    inquirer.prompt(userQuestions)
+        .then((data) => {
+            writeToFile('sample-README.md', data)
+        })
+}
 
+// function call to initialize program
+init();
 //source of badges/shields
 // https://shields.io/
