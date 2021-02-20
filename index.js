@@ -77,17 +77,17 @@ const questions = [
 // const fs = require("fs") similar to in class activity 28
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
-function writeToFile(fileName, data) {
-fs.writeFile ("READMEgenerated.md", "README ", function(err) {
-    if (err) {console.log("Uh-oh, there has been an error.")}
-    else {console.log("Success! Your README file has been generated.")}
-    });
-}
+// function writeToFile(fileName, data) {
+// fs.writeFile("READMEgenerated.md", "README ", function(err) {
+//     if (err) {console.log("Uh-oh, there has been an error.")}
+//     else {console.log("Success! Your README file has been generated.")}
+//     });
+// }
     
-// function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, generateMarkdown(data), err =>
-        err ? console.log(err) : console.log('Success!'))
+// // function to write README file
+function writeToFile(readmeGenerated, data) {
+    fs.writeFile(readmeGenerated.md, generateMarkdown(data), err =>
+        err ? console.log(err) : console.log("Success! Your README file has been generated."))
 }
 
 // function to initialize program
