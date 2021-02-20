@@ -9,7 +9,8 @@ const util = require('./Utils/generateMarkdown');
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
-const questions = [
+const promptUser = () => {
+    return inquirer.prompt([
         {
             type: "input",
             message: "Enter the title of your project, please:",
@@ -70,8 +71,9 @@ const questions = [
                 "Eclipse Public License 1.0",
                 "Apache License, Version 2.0"
             ]
-        }
-    ];
+        },
+    ])
+};
 
 //adding feedback from the console re success or failure of creating new readme file
 // const fs = require("fs") similar to in class activity 28
@@ -85,6 +87,7 @@ const questions = [
 // }
     
 // // function to write README file
+//not sure if this works because it was written before the rest
 function writeToFile(readmeGenerated, data) {
     fs.writeFile(readmeGenerated.md, generateMarkdown(data), err =>
         err ? console.log(err) : console.log("Success! Your README file has been generated."))
@@ -94,7 +97,7 @@ function writeToFile(readmeGenerated, data) {
 function init() {
     inquirer.prompt(userQuestions)
         .then((data) => {
-            writeToFile('sample-README.md', data)
+            writeToFile(readmeGenerated, data)
         })
 }
 
