@@ -1,12 +1,8 @@
-// setting up entries from user for their README file
-// helpful website with inquirer code examples https://www.codota.com/code/javascript/modules/inquirer
-
-// TODO: Include packages needed for this application
 
 let inquirer = require('inquirer');
 let fs = require('fs');
 const util = require('./Utils/generateMarkdown');
-const writeFileAsync = util.promisify(fs.writeFile);
+// const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
 const promptUser = () => {
@@ -72,7 +68,7 @@ const promptUser = () => {
                 "Apache License, Version 2.0"
             ]
         },
-    ])
+    ]);
 };
 
 //adding feedback from the console re success or failure of creating new readme file
@@ -90,15 +86,15 @@ const promptUser = () => {
 //not sure if this works because it was written before the rest
 function writeToFile(readmeGenerated, data) {
     fs.writeFile(readmeGenerated.md, generateMarkdown(data), err =>
-        err ? console.log(err) : console.log("Success! Your README file has been generated."))
+        err ? console.log(err) : console.log("Success! Your README file has been generated."));
 }
 
 // function to initialize program
 function init() {
-    inquirer.prompt(userQuestions)
+    inquirer.prompt(promptUser)
         .then((data) => {
-            writeToFile(readmeGenerated, data)
-        })
+            writeToFile(readmeGenerated, data);
+        });
 }
 
 // function call to initialize program
