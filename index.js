@@ -5,7 +5,9 @@ const util = require('./Utils/generateMarkdown');
 // const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
-const promptUser = () => {
+const writeFileAsynce = util.promisify (fs.writeFile);
+
+function promoptUser()  {
     return inquirer.prompt([
         {
             type: "input",
