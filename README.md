@@ -22,8 +22,6 @@
   For more information on licenses and standards, click on the link below
   [Information on Licenses](http://opensource.org/licenses)
 
-  [![badge]](https://img.shields.io/badge/license-MIT-blue.svg)
-
  ## Questions or comments?
     If you have any questions or would like to leave a comment, please see my GitHub page at:
     [My GitHub profile](https://github.com/wmgleason)
