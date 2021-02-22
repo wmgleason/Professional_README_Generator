@@ -41,8 +41,9 @@ function generateMarkdown(response) {
   ${response.GitHub}
   ## License
   For more information on licenses and standards, click on the link below
-  [License Badge](http://opensource.org/licenses/)
-  ![badge](https://img.shields.io/badge/license-${response.License}+blue.svg)
+  [[License Badge]](http://opensource.org/licenses)
+
+  [![badge]](https://img.shields.io/badge/license-${response.License}+blue.svg)
 
   ## Questions or comments?
     If you have any questions or would like to leave a comment, please see my GitHub page at:
