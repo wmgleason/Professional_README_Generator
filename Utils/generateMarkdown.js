@@ -55,7 +55,7 @@ function generateMarkdown(response) {
 }
   //License badge handling
   // note to self - try using switch as in 09 math activity
-  switch (data.license) {
+  switch (response.license) {
     case 'Apache 2.0':
       licenseBadge = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
       break;
