@@ -2,7 +2,7 @@
    Professional_README_Generator
   # Table of Contents
   ## Description
-  ![License](https://img.shields.io/badge/license-MIT License-blue.svg) "License Badge"
+  ![License](https://img.shields.io/badge/license-MIT-blue.svg) "License Badge"
   This app used a command-line interface to generate a new README file for the user based on the user's answers to questions prompted by the app to fill in the pertinent sections in a professional README file.
   ## Installation
   Please install node, inquirer and util to use this app.
@@ -22,7 +22,7 @@
   For more information on licenses and standards, click on the link below
   [[License Badge]](http://opensource.org/licenses)
 
-  [![badge]](https://img.shields.io/badge/license-MIT License+blue.svg)
+  [![badge]](https://img.shields.io/badge/license-MIT License-blue.svg)
 
   ## Questions or comments?
     If you have any questions or would like to leave a comment, please see my GitHub page at:
