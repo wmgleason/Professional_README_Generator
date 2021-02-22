@@ -1,11 +1,13 @@
 
 let inquirer = require('inquirer');
 let fs = require('fs');
-const util = require('./Utils/generateMarkdown');
+const util = require('util');
+const generateMarkdown = require('./Utils/generateMarkdown');
+// const promisify = require('util.promisify');
 // const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
-const writeFileAsynce = util.promisify (fs.writeFile);
+const writeFileAsync = util.promisify(fs.writeFile);
 
 function promptUser()  {
     return inquirer.prompt([
@@ -86,18 +88,38 @@ function promptUser()  {
     
 // // function to write README file
 //not sure if this works because it was written before the rest
+// function writeToFile(readmeGenerated, data) {
+//     fs.writeFile(readmeGenerated, generateMarkdown(data), err =>
+//         err ? console.log(err) : console.log("Success! Your README file has been generated."));
+// }
 function writeToFile(readmeGenerated, data) {
-    fs.writeFile(readmeGenerated.md, generateMarkdown(data), err =>
+    fs.writeFile(readmeGenerated, generateMarkdown, err =>
         err ? console.log(err) : console.log("Success! Your README file has been generated."));
 }
 
-// function to initialize program
-function init() {
-    inquirer.prompt(promptUser)
-        .then((data) => {
-            writeToFile(readmeGenerated, data);
-        });
-}
+async function init() {
+    try {
+        // Ask user questions and generate responses
+        const answers = await promptUser();
+        const generateContent = generateMarkdown(answers);
+        // Write new README.md to dist directory
+        await writeFileAsync('./README.md', generateContent);
+        console.log('✔️  Success! Your README file has been generated.');
+    }   catch(err) {
+        console.log(err);
+    }
+  }
+  
+
+
+
+// // function to initialize program
+// function init() {
+//     inquirer.prompt(promptUser)
+//         .then((data) => {
+//             writeToFile(readmeGenerated, data);
+//         });
+// }
 
 // function call to initialize program
 init();
