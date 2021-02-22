@@ -1,17 +1,17 @@
 
-   Professional_README_Generator
+   README_Generator
   # Table of Contents
   ## Description
-  ![License](https://img.shields.io/badge/License-MIT License+blue.svg) "License Badge"
-  This README generator allows the user to easily and quickly create a README.md file for their project.
+  ![License](https://img.shields.io/badge/license-MIT License-blue.svg) "License Badge"
+  This app allows the user to quickly and easily generate a new complete README file
   ## Installation
   Please install node.js, inquirer, and util
   ## Usage:
-  You run this project from the command-line with node. It will prompt you for answers to germain questions regarding your project's README file. Once you have finished answering all the questions, this app will generate a new README.md file for you.
+  This app can be used by anyone who would like to have a README file generated for them by answering the questions prompted by the app. Once the questions are answered, your README file is generated.
   ## Features:
-  None
+  
   ## Contributing:
-  If you would like to add to this project please, Fork it on GitHub, create your feature branch, commit your changes, push to the branch, and create a new Pull Request.
+  Please fork a new branch, commit your changes and submit a new pull request in order to contribute.
   ## Tests:
   None
   ## Email address:
@@ -19,9 +19,9 @@
   ## GitHub username:
   wmgleason
   ## License
-  For more information on the license, click on the link below
-  - [License Badge](http://opensource.org/licenses/MIT License)
-  // ![badge](https://img.shields.io/badge/license-MIT License+blue.svg)
+  For more information on licenses and standards, click on the link below
+  [License Badge](http://opensource.org/licenses/)
+  ![badge](https://img.shields.io/badge/license-MIT License+blue.svg)
 
   ## Questions or comments?
     If you have any questions or would like to leave a comment, please see my GitHub page at:
