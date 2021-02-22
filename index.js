@@ -1,4 +1,3 @@
-
 let inquirer = require('inquirer');
 let fs = require('fs');
 const util = require('util');
@@ -99,10 +98,10 @@ function writeToFile(readmeGenerated, data) {
 
 async function init() {
     try {
-        // Ask user questions and generate responses
+        // Ask the user questions and use entered responses
         const answers = await promptUser();
         const generateContent = generateMarkdown(answers);
-        // Write new README.md to dist directory
+        // Write new README.md which overwrites old in this directory
         await writeFileAsync('./README.md', generateContent);
         console.log('✔️  Success! Your README file has been generated.');
     }   catch(err) {
