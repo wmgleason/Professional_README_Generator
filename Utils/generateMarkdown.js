@@ -24,7 +24,7 @@ function generateMarkdown(response) {
    ${response.Title}
   # Table of Contents
   ## Description
-  ![License](https://i,g.shields.io/badge/License-${response.License}+blue.svg "License Badge"
+  ![License](https://i,g.shields.io/badge/License-${response.License}+blue.svg) "License Badge"
 
     ${response.Description}
   ## Installation
@@ -43,11 +43,11 @@ function generateMarkdown(response) {
   ${response.GitHub}
   ## License
     For more information on the license, click on the link below
-    - [License](http://opensource.org/licenses/${response.License})
+    - [License Info](http://opensource.org/licenses/${response.License})
 
-  ##Questions or comments?
+  ## Questions or comments?
     If you have any questions or would like to leave a comment, please see my GitHub page at:
-    - [GitHub profile](https://github.com/${response.GitHub})
+    - [My GitHub profile](https://github.com/${response.GitHub})
   
     Or send me an email at:
     ${response.Email}
