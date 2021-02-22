@@ -51,10 +51,10 @@ function generateMarkdown(response) {
   
     Or send me an email at:
     ${response.Email}
-    `;
-}
+    `
   //License badge handling
   // note to self - try using switch as in 09 math activity
+  let licenseBadge;
   switch (response.license) {
     case 'Apache 2.0':
       licenseBadge = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
@@ -80,7 +80,7 @@ function generateMarkdown(response) {
     case 'Mozilla Public 2.0':
       licenseBadge = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
       break;
-    default:
+    default:'None'
       break;
   };
 
