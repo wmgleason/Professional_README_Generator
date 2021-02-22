@@ -6,7 +6,7 @@ Professional_README_Generator
   This app used a command-line interface to generate a new README file for the user based on the user's answers to questions prompted by the app to fill in the pertinent sections in a professional README file.
   ## Installation
   Please install node, inquirer and util to use this app.
-  n## Usage:
+  ## Usage:
   Please run this app from the command line using Node.js
   ## Features:
   
