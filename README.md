@@ -29,3 +29,4 @@ Professional_README_Generator
     Or send me an email at:
     oglissane@gmail.com
     
+    Link to video of the app: [app Video](README Generator small.mov)
