@@ -29,5 +29,5 @@ Professional_README_Generator
     Or send me an email at:
     oglissane@gmail.com
     
-    Link to gif of the app in use: [app gif](README%20Generator%20small.gif)
-    You can also watch a video of the app in use with sound: [app gif](README%20Generator%20small.mov)
+    Link to gif of the app in use: ![app gif][(README%20Generator%20small.gif)]
+    You can also watch a video of the app in use with sound: ![app gif](README%20Generator%20small.mov)
