@@ -30,5 +30,5 @@ Professional_README_Generator
     oglissane@gmail.com
 
 
-    Link to gif of the app in use: ![app gif](https://github.com/wmgleason/Professional_README_Generator/blob/main/README%20Generator%20small.gif)
+    Link to gif of the app in use: ![app gif](https://github.com/wmgleason/Professional_README_Generator/blob/main/README%20Generator%20small.gif?raw=true)
     You can also watch a video of the app with sound: <video src="README%20Generator%20small.mov" poster="Img%20README%20file%20raw.png" width="640" height="352" controls preload></video>
